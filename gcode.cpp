@@ -1,3 +1,7 @@
+/**
+ * The `loop()` function in Marlin firmware handles main tasks continuously, including idle tasks, SD
+ * card operations, and executing G-code commands from the queue.
+ */
 #include "MarlinCore.h"
 
 #include "core/utility.h"
@@ -1194,6 +1198,11 @@ Commented by Mohammad Shannak 27.08.2024
  */
 /**
  * \brief Main loop function where the main tasks of the firmware are executed continuously.
+ */
+/**
+ * The function `loop()` in C++ contains a do-while loop that executes various tasks such as idling,
+ * checking SD support, advancing the queue, handling endstops, and running a specific function for a
+ * Dexarm.
  */
 void loop() {
   do {
